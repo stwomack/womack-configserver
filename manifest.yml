@@ -1,0 +1,10 @@
+---
+instances: 1
+memory: 512M
+applications:
+  - name: womack-configserver
+    host: confz
+    path: target/womack-configserver-0.0.1-SNAPSHOT.jar
+    services:
+    env:
+      SPRING_PROFILES_ACTIVE: dev
